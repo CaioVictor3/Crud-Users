@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'crud-usuarios';
+
+  clicounele() {
+    window.alert('Clicou no título!');
+  }
 }
