@@ -7,6 +7,6 @@ import { Component, Input, input } from '@angular/core';
 })
 export class ButtonComponent {
 
-  @Input() textoBotao!: string;
-
+  @Input() textoBotao: string='Acessar';
+  @Input() size: string = 'auto'
 }
