@@ -24,4 +24,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     cursor: pointer;
 }
 
+.mat-mdc-progress-spinner .mdc-circular-progress__circle, .mat-mds-progress-spinner .mdc-circular-progress__circle {
+    stroke: var(--primary-color)!important;
+}
 

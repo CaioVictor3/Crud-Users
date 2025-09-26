@@ -6,17 +6,17 @@
             <div class="card-info">
                 <div class="row">
                     <div class="col-12 col-md-8">
-                        <h1 class="title">CRU-USERS</h1>
+                        <h1 class="titulo">CRUD-USERS</h1>
                         <h3 class="subtitulo">
-                            Mais eficiencia na gestão de <span>usuários</span> e de seus beneficios. Chega de sistemas antigos e sem usabilidade, agora com o 
+                            Mais eficiência na gestão de <span>usuários</span> e de seus benefícios. Chega de sistemas antigos e sem usabilidade, agora com o 
                             <span>Crud users</span> seu trabalho fica até 3x mais rápido e simplificado.
                             Confira um resumo das informações do nosso <span>Dashboard</span>
-                            <button routerLink="./usuarios" class="botao-primario"></button>
-                            <app-button textButton="Iniciar" routerLink="./usuarios" ></app-button>
-                            <div class="col-12 col-md-4">
-                                <img src="../../../assets/dashboard.png" width="100%">
-                            </div>
                         </h3>
+                        <button routerLink="./usuarios" class="botao-primario">Iniciar</button>
+                        <app-button textButton="Iniciar" routerLink="./usuarios"></app-button>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <img src="../../../assets/dashboard.png" width="100%">
                     </div>
                 </div>
             </div>
@@ -27,16 +27,16 @@
                     <div class="card-info">
                         <div class="row">
                             <div class="col-8">
-                                <p class="texto-card">Total de users no sistema</p>
+                                <p class="texto-card">Total de usuários no sistema</p>
                                 <p class="numero-card">79</p>
-                                <p class="destaque-card">+5 Adicionados no ultimo mês</p>
+                                <p class="destaque-card">+5 Adicionados no último mês</p>
                             </div>
 
                             <div class="col-4">
-                                <p class="info-spinner">
+                                <div class="info-spinner">
                                     <mat-progress-spinner class="examples-margin max-auto color-spinner" mode="determinate" value="79"></mat-progress-spinner>
                                     79/150
-                                </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -46,26 +46,74 @@
                     <div class="card-info">
                         <div class="row">
                             <div class="col-8">
-                                <p class="texto-card">Toal de beneficios cadastrados</p>
+                                <p class="texto-card">Total de benefícios cadastrados</p>
                                 <p class="numero-card">4</p>
-                                <p class="destaque-card">+2 Adicionados no ultimo mês</p>
+                                <p class="destaque-card">+2 Adicionados no último mês</p>
                             </div>
 
                             <div class="col-4">
-                                <p class="info-spinner">
+                                <div class="info-spinner">
                                     <mat-progress-spinner class="examples-margin max-auto color-spinner" mode="determinate" value="80"></mat-progress-spinner>
                                     4/5
-                                </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div>
-                    <p>teste</p>
+                <div class="col-12 mt-4">
+                    <div class="card-info">
+                        <div class="row">
+                            <div class="col-8">
+                                <p class="texto-card">Total de benefícios cadastrados</p>
+                                <p class="numero-card">4</p>
+                                <p class="destaque-card">+2 Adicionados no último mês</p>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="card-info">
+                                    <h3 class="titulo">Último usuário cadastrado</h3>
+                                    <hr class="hr">
+
+                                    <div class="row">
+                                        <div class="col-1"> <mat-icon>account_circle</mat-icon> </div>
+                                        <div class="col-1"><p class="texto-p">1</p></div>
+                                        <div class="col-1"><p class="texto-p">Caio Victor</p></div>
+                                        <div class="col-1"><p class="texto-p">Desenvolvedor Web</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 
             </div>
         </div>
+
+        <div class="col-12 col-lg-3">
+            <div class="card-info">
+                <div class="container-perfil">
+                    <img src="../../../assets/imagem-perfil.jpeg" class="img-perfil">
+                    <h4>Bem-vindo</h4>
+                    <h5>Caio Victor</h5>
+                    <li>
+                        <mat-icon>location_on</mat-icon>
+                        Ipatinga-MG
+                    </li>
+                </div>
+                <hr class="hr">
+                <p class="texto-p">"Um ser humano deve transformar informação em inteligência ou conhecimento. Tendemos a esquecer que nenhum computador jamais fará uma nova pergunta"</p>
+                <hr class="hr">
+
+                <li><mat-icon>person</mat-icon>Gerencie Usuarios</li>
+                <li><mat-icon>loyalty</mat-icon>Adicione Beneficios</li>
+                <li><mat-icon>format_list_bulleted</mat-icon>Consulte Cadastros</li>
+                <li><mat-icon>delete</mat-icon>Exclua Usuários</li>
+                
+            </div>
+        </div>
+
+
+
     </div>
 </div>

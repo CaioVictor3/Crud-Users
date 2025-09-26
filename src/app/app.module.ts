@@ -31,6 +31,7 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     MatIconModule,
     MatProgressSpinnerModule,
   ],
+  
   providers: [
     provideAnimationsAsync()
   ],
