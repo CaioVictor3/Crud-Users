@@ -7,5 +7,4 @@ firebaseConfig: {
   messagingSenderId: "431784809781",
   appId: "1:431784809781:web:641f8e74b71e9da988e87c"
 }
-
 };

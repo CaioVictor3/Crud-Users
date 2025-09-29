@@ -14,6 +14,10 @@ import { MenuComponent } from './components/menu/menu.component';
 //ANGULAR MATERIAL IMPORTS
 import { MatIconModule } from '@angular/material/icon';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+import { getFirestore, provideFirestore } from '@angular/fire/firestore';
+import { environment } from '../environments/environment';
+import { AngularFireModule } from '@angular/fire/compat';
 
 @NgModule({
   declarations: [
@@ -30,11 +34,14 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     FormsModule,
     MatIconModule,
     MatProgressSpinnerModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
   ],
   
   providers: [
-    provideAnimationsAsync()
-  ],
+    provideAnimationsAsync(),
+    provideFirebaseApp(() => initializeApp({"projectId":"crus-usuarios-angular","appId":"1:431784809781:web:641f8e74b71e9da988e87c","storageBucket":"crus-usuarios-angular.firebasestorage.app","apiKey":"AIzaSyA3aDGBLT8MGY-IhO5EzIyUkLscwc7NlOo","authDomain":"crus-usuarios-angular.firebaseapp.com","messagingSenderId":"431784809781"})),
+    provideFirestore(() => getFirestore())
+],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
