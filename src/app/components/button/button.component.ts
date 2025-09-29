@@ -1,12 +1,13 @@
-import { Component, Input, input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-button',
   templateUrl: './button.component.html',
-  styleUrl: './button.component.scss'
+  styleUrls: ['./button.component.scss']
 })
 export class ButtonComponent {
 
   @Input() textoBotao: string='Acessar';
   @Input() size: string = 'auto'
+  @Input() routerLink?: string | any[];
 }
