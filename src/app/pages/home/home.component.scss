@@ -2,7 +2,7 @@
     background: #fafafa;
     padding: 14px 18px 0px 18px;
     border-radius: 6px;
-    box-shadow: 0px 4px 3px 1px #0a0a0a20
+    box-shadow: 0px 4px 3px 1px #0a0a0a20;
 }
 
 
@@ -58,8 +58,10 @@
     font-weight: 500;
     color: #797979;
     text-align: center;
-    position: relative;
-    top: -62px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: 0 auto;
 }
 
@@ -72,7 +74,7 @@ li{
     margin: 0;
     display: flex;
     align-items: center;
-    border-radius: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
     mat-icon{
         margin-right: 14px;
         font-size: 22px;
@@ -85,6 +87,50 @@ li{
     width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+// keep spinner size consistent
+.color-spinner{
+    width: 48px !important;
+    height: 48px !important;
+}
+
+// utility for headings inside cards when reused
+.hr{
+    border-color: #e9e9e9;
+}
+
+// Horizontal bar under benefits card
+.last-user-bar{
+    background: #ffffff;
+    border: 1px solid #e9e9e9;
+    border-radius: 6px;
+    padding: 10px 14px;
+}
+
+.last-user-title{
+    margin-bottom: 6px;
+}
+
+.last-user-content{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    mat-icon{
+        color: var(--primary-color);
+    }
+    .id{
+        min-width: 24px;
+        text-align: center;
+        color: #5a5a5a;
+    }
+    .nome{
+        font-weight: 500;
+        color: #444;
+    }
+    .cargo{
+        color: #7a7a7a;
+    }
 }
 
 .container-perfil{
